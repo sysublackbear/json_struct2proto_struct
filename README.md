@@ -22,3 +22,4 @@ message BarInfo
   optional bytes bar = 1 [json_key="/bar"];
 }
 ```
+利用protobuf和Json的反射特性。
