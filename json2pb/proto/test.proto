@@ -1,0 +1,30 @@
+package test;
+
+import "google/protobuf/descriptor.proto";
+
+extend google.protobuf.FieldOptions
+{
+    optional string json_key = 10086;
+}
+
+
+message TTT
+{
+    required int32 id=1;
+}
+
+message Bar
+{
+    optional bytes bar_key1 = 1 [(json_key) = "/fuck/barkey1"];
+}
+
+message FooReq
+{
+    optional bytes foo_key1 = 1;
+    optional int32 foo_key2 = 2;
+    optional int64 foo_key3 = 3;
+    optional Bar bar_info = 4;
+}
+
+
+

@@ -1,0 +1,8 @@
+{
+    foo_key1 : "foo_key1",
+    foo_key2 : 2,
+    foo_key3 : 3,
+    bar_info : {
+        "bar_key1" : "bar_key1",
+    },
+}
